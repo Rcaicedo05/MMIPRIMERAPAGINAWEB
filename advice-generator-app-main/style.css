@@ -1,0 +1,106 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo general */
+body {
+  min-height: 100vh;
+  background: hsl(218, 23%, 16%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Manrope', Arial, sans-serif;
+}
+
+/* Tarjeta principal */
+.advice-card {
+  background: hsl(217, 19%, 24%);
+  color: hsl(193, 38%, 86%);
+  max-width: 450px;
+  width: 90vw;
+  padding: 2.5rem 2rem 4.5rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px 0 rgba(0,0,0,0.2);
+  text-align: center;
+  position: relative;
+}
+
+/* ID del consejo */
+.advice-id {
+  color: hsl(150, 100%, 66%);
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+}
+
+/* Texto del consejo */
+.advice-text {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: hsl(193, 38%, 86%);
+  margin-bottom: 2rem;
+  line-height: 1.4;
+}
+
+/* Divider */
+.divider {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+/* Botón dado */
+.dice-btn {
+  background: hsl(150, 100%, 66%);
+  border: none;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  bottom: -32px;
+  transform: translateX(-50%);
+  cursor: pointer;
+  box-shadow: 0 0 20px hsl(150, 100%, 66%, 0.5);
+  transition: box-shadow 0.2s;
+}
+
+.dice-btn:hover, .dice-btn:focus {
+  box-shadow: 0 0 40px hsl(150, 100%, 66%, 0.8);
+}
+
+/* Imagen del dado */
+.dice-btn img {
+  width: 28px;
+  height: 28px;
+}
+
+/* Attribution */
+.attribution {
+  color: hsl(193, 38%, 86%);
+  font-size: 0.9rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(150, 100%, 66%);
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .advice-card {
+    padding: 2rem 1rem 4rem 1rem;
+    max-width: 90vw;
+  }
+  .advice-text {
+    font-size: 1.1rem;
+  }
+}
